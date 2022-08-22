@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "About";
+const description = "About your blog.";
+const permalink = `${Astro?.site?.href}about`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="about"
+>
+  <div class="container">
+    <h1>About</h1>
+    <figure class="about-image">
+      <img
+        src="/assets/about-illustration.webp"
+        alt="Illustration of a notebook"
+        width="330"
+      />
+    </figure>
+    <p>
+      Let me tell you a bit about myself. I'm a full-stack web developer based
+      in Louisville, KY. I am currently employed as a Senior Application
+      Architect at Humana. There, I specialize in building and maintaining a
+      variety of rich online content. I am well-versed in many of the latest
+      development standards in HTML, CSS, JavaScript. On the client-side, I
+      prefer to work in Vue.js or Angular with TypeScript. On the server-side, I
+      do most of my work in Node.js and a little .NET here and there.
+    </p>
+    <p>
+      My core work ethic revolves around identifying and solving a client's
+      actual needs. Flashy design rarely wins over absolute function in the real
+      world and my portfolio strives to convey that. Whether it is a mom-and-pop
+      business, a local restaurant or a thriving corporate portal, I strive to
+      fulfill the client's specific needs in an easy to use and familiar fashion
+      that keeps up with today's standards for online content.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>
