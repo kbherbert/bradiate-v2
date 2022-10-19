@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = "Bradiate";
-const description = "The online portfolio and blog of Brady Herbert";
-const permalink = Astro?.site?.href || "";
+const title = 'Bradiate';
+const description = 'The online portfolio and blog of Brady Herbert';
+const permalink = Astro?.site?.href || '';
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink}>
@@ -12,12 +12,16 @@ const permalink = Astro?.site?.href || "";
       <h1>Hi, I am Brady Herbert.</h1>
       <p>
         Get to know a little bit more <a href="/about">about me</a>. You can
-        also check out my <a href="/blog">blog</a> or find me on <a
+        also check out my <a href="/blog">blog</a> and find me on <a
           href="https://www.github.com/kbherbert"
           target="_blank"
           rel="noopener"
           >GitHub
-        </a>.
+        </a> or <a
+          href="https://www.linkedin.com/in/brady-herbert-93920624"
+          target="_blank"
+          rel="noopener">LinkedIn</a
+        >.
       </p>
     </div>
 

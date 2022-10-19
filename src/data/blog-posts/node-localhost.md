@@ -11,7 +11,6 @@ First of all, for the machine that is acting as your Node server, make the follo
 ```js
 // familiar code to start our server
 server.listen(port, host);
-});
 ```
 
 The key here is setting your host to `0.0.0.0`. Don’t ask me why this works, but it does. You can supplement that with whatever port you choose. This is helpful if you are running multiple Node instances that map to different ports. My configuration looks like this:
@@ -19,7 +18,6 @@ The key here is setting your host to `0.0.0.0`. Don’t ask me why this works, b
 ```js
 // start our server
 server.listen(8124, 0.0.0.0);
-});
 ```
 
 So, on your server you can simply paste in the usual: http://localhost:8124. Assuming you have started your Node server, this should spin up your site.
