@@ -1,6 +1,6 @@
 {
   "name": "bradiate",
-  "version": "2.0.0",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
@@ -10,12 +10,18 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^0.8.3",
-    "@astrojs/svelte": "^1.0.0",
-    "astro": "^1.0.3",
-    "rehype-external-links": "^2.0.0"
+    "@astrojs/mdx": "^4.1.0",
+    "@astrojs/svelte": "^7.0.5",
+    "astro": "^5.4.2",
+    "rehype-external-links": "^3.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-smartypants": "^2.1.0"
   },
   "dependencies": {
-    "reading-time": "^1.5.0"
+    "reading-time": "^1.5.0",
+    "svelte": "^5.22.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
