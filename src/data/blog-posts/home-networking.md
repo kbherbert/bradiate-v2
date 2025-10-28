@@ -1,6 +1,6 @@
 ---
 title: My home networking project
-publishDate: 29 Oct 2024
+publishDate: 1 Dec 2023
 description: Experiments with Unifi, Raspberry Pi OS, Docker and more
 ---
 
